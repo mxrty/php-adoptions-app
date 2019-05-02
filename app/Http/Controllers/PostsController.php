@@ -128,7 +128,7 @@ class PostsController extends Controller
             'animal_type' => 'required',
             'dob' => 'required',
             'description' => 'required',
-            'image' => 'image|mimes:jpg,jpeg,jpg|nullable|max:1999'
+            'image' => 'image|mimes:jpg,jpeg,png|nullable|max:1999'
         ]);
 
         if($request->hasFile('image')){
